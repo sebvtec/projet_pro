@@ -25,6 +25,9 @@ window.onload = function() {
         document.getElementById('routage').value = "pass_perdu";
         document.getElementById('mainForm').submit();
     });
-
     
+    document.getElementById('btnEnvoyer').addEventListener('click', function(e) {
+        document.getElementById('routage').value = "inscriptionToBdd";
+        document.getElementById('mainForm').submit();
+    });
 }
