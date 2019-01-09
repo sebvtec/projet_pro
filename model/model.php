@@ -31,7 +31,7 @@ function register(){
 	$stmt->execute();
 	
 
-    header('Location: accueil.html');
+    header('Location: accueil.html.twig');
 	}
 
 
