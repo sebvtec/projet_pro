@@ -1,0 +1,98 @@
+body{
+    margin: 0%;
+    background-image: url(../img/img_pass_perdu.png);
+    background-repeat: no-repeat;
+    
+}
+
+header{ 
+    background-image: url(../img/header.png);
+    height: 100px;
+    margin: 0%;
+}
+
+#logo{
+    width: 250px;
+    height: 150px;
+    position: relative;
+    left: 1820px;
+    top: 20px;
+    background-image: url(../img/logo.png);
+    margin: 0%;
+    
+}
+
+.titrePage{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0%;
+    width: 500px;
+    position: relative;
+    bottom: 295px;
+    left: 550px;
+}
+
+#bouton{
+    margin: 0px;
+    background-image: url(../img/button.png);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: -30px;
+    bottom: 180px;
+    margin: 0%;
+    opacity: 0;
+}
+
+.go_master_page{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    opacity: 0;
+
+}
+
+/*le design general s'arrete ici*/
+
+#formulaire{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    position: relative;
+    left: 370px;
+    margin: 0%;
+    width: 800px;
+}
+
+#btnEnvoyer{
+    border-radius: 10px;
+}
+
+.inputbox{
+    position: relative;
+    float: left;
+}
+
+#mentions_legal{
+    color: white;
+}
+
+#bootsrapnav{
+    opacity: 1;
+
+}
+
+#btnnav{
+    opacity: 1;
+}
+
+.navmenu{
+    color: white;
+}
+
+#mentions_legal{
+    position: relative;
+    left: 250px;
+    width: 1200px;
+}

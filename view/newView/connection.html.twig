@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %} - connection{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="src/css/style.css">
+
+    <div id="formulaire">
+        Pseudo<br>
+        <input type="text" class="inputbox" name="fname">
+        <br><br><br>
+        Mot de passe<br>
+        <input type="password" class="inputbox" name="lname">
+        <br><br><br>
+        <a id="linkPass_perdu" href="#" class="lost_password">Mot de passe oublié ?</a>
+        <br><br>
+        <input id="btnEnvoyer" type="submit" value="Envoyer">
+    </div>
+
+{% endblock %}

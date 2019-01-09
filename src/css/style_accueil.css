@@ -1,0 +1,88 @@
+body{
+    margin: 0%;
+    background-image: url(../img/map_master_page.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header{ 
+    background-image: url(../img/header.png);
+    height: 100px;
+    margin: 0%;
+}
+
+#logo{
+    width: 250px;
+    height: 150px;
+    position: relative;
+    left: 1820px;
+    top: 20px;
+    background-image: url(../img/logo.png);
+    margin: 0%;
+    
+}
+
+.titrePage{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0%;
+    width: 500px;
+    position: relative;
+    bottom: 295px;
+    left: 550px;
+}
+
+#bouton{
+    margin: 0px;
+    background-image: url(../img/button.png);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: -30px;
+    bottom: 180px;
+    margin: 0%;
+    opacity: 0;
+}
+
+.go_master_page{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    opacity: 0;
+
+}
+#bootsrapnav{
+    opacity: 1;
+
+}
+
+#btnnav{
+    opacity: 1;
+}
+
+.navmenu{
+    color: white;
+}
+
+#canvas{
+    border-style: solid;
+    border-width: 1px solid;
+    border-color: brown;
+    width: 1504.8px;
+    height: 704.8px;
+}
+
+/*@media screen and (max-width: 600px) {
+
+    #logo{
+        width: 250px;
+        height: 150px;
+        position: relative;
+        left: 1250px;
+        top: 20px;
+        background-image: url(../img/logo.png);
+        margin: 0%;
+        
+    }
+    
+}

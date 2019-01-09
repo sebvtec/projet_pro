@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/style_accueil.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="src/js/main.js"></script>
+    <title>HONDA#REF {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <form id="mainForm" action="index.php" method="POST">
+        <input id="routage" type="hidden" name="routage" value="index" />
+        <header>
+            <div id="logo">
+                <a id="linkAccueil" href="#" class="go_master_page">go master page go master page<br>go master page go master page<br>go master page go master page</a>
+                <br><br>
+            </div>
+            <div id="bouton"></div>
+            <div class="fixed-top">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-gradient-dark p-4">
+                        <h4 class="text-white"><a id="linkInscription" href="#" class="navmenu"><br><br><br>INSCRIPTION</a><br></h4>
+                        <h4 class="text-white"><a id="linkConnection" href="#" class="navmenu">CONNECTION</a><br></h4>
+                        <h4 class="text-white"><a id="linkMention" href="#" class="navmenu">MENTIONS LEGAL</a><br><br></h4>
+                    </div>
+                </div>
+                <nav id="bootsrapnav" class="navbar navbar-dark bg-gradient-dark">
+                    <button id="btnnav" class="navbar-toggler fixed-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <br><br>
+        {% block content %}{% endblock %}
+        <footer></footer>
+    </form>
+</body>
+</html>

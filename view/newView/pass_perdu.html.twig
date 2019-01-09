@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block title %} - pass_perdu{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="src/css/style.css">
+
+
+<div class="row">
+    <div class="col-md-6">
+        <div id="formulaire">
+            <p>Entrez l’adresse e-mail pour laquelle vous avez oublié votre mot de passe.<br>
+                Une fois validé avec le bouton "envoyer" rendez-vous sur votre messagerie pour recuperez votre mot de passe</p><br><br>
+            <form action="index.html" method="get">
+                Pseudo<br><input type="text" class="inputbox" name="fname"><br><br><br>
+                Votre adresse E-mail<br> <input type="text" class="inputbox" name="mail" placeholder="exemple@e-mail.fr"><br><br><br>
+                <input id="btnEnvoyer" type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+    <div class="col-md-6">
+        VOUS ETES UN CON
+    </div>
+</div>
+
+{% endblock %}

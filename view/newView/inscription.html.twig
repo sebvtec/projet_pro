@@ -1,0 +1,39 @@
+
+
+{% extends "base.html.twig" %}
+
+{% block title %} - inscription{% endblock %}
+
+{% block content %}
+
+
+<link rel="stylesheet" type="text/css" href="src/css/style.css">
+
+    <div id="formulaire">
+                Nom<br> <input type="text" class="inputbox" name="nom"><br><br><br>
+                Prénom<br> <input type="text" class="inputbox" name="prenom"><br><br><br>
+                Votre adresse E-mail<br> <input type="text" class="inputbox" name="mail" placeholder="exemple@e-mail.fr"><br><br><br>
+                Creer votre pseudo<br> <input type="text" class="inputbox" name="pseudo"><br><br><br>
+                Mot de passe<br> <input type="password" class="inputbox" name="passe"><br><br><br>
+                Confirmez votre mot de passe<br> <input type="password" class="inputbox" name="Cpass"><br><br><br>
+                <!--Le modele de votre Honda<br> <SELECT name="modele" size="1">
+                    <OPTION>CIVIC
+                    <OPTION>CRX
+                    <OPTION>INTEGRA
+                    <OPTION>S2000
+                    <OPTION>ACCORD
+                    <OPTION>NSX
+                    <OPTION>PRELUDE
+                    </SELECT><br>
+                Code moteur<br> <SELECT name="CodeMoteur" size="1">
+                            <OPTION>b18c
+                            <OPTION>k20a
+                            <OPTION>f20c
+                            <OPTION>h22
+                            <OPTION>d16
+                            <OPTION>b16a
+                            </SELECT><br><br>!-->
+                <input id="btnEnvoyer" type="submit" value="Envoyer">
+                <br><br><br>
+        </div>
+    {% endblock %}

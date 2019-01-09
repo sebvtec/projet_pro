@@ -1,0 +1,54 @@
+
+----------------------------------------------------------papier des charges------------------------------------------------------------------
+
+
+
+
+mon projet est un site internet qui a pour theme la marque honda et ses passionés, et la mecanique automobile
+
+le projet à des buts informatifs ex( lire un article qui explique un montage mecanique avec photos/video/animations ),d'echanges entre utilisateur via forum.
+
+l'ecran d'accueil sera representer par une carte de la ville toute la navigation du site y sera 
+
+il y a egalement une partie "participative" dans le sens ou les utilisateurs pourront ajouter leurs projets de preparation auto pour le presenter aux autres 
+un systeme de prendre / deposer un fichier .stl (fichiers pour impression 3D petites pieces de voiture ) 
+
+
+un index des membres avec leurs infos sera creer pour que les utilisateurs se trouvent facilement
+il y aura plusieurs profils d'utilisateur (admin ou normal)   
+ 
+chaque utilisateur aura son espace personel apres inscription 
+cet espace perso comportera les infos de base de l'utilisateur (nom,prenom etc..)mais egalement les infos sur le vehicule de celui ci
+il pourra alors choisir parmis une liste de pieces auto les ameliorations qu'il a apporter a sa voiture
+les modifs seront tres visuel.
+
+
+
+
+
+
+Et enfin une section 'swap' le but de cette section et de dire via une bdd qu'elle pieces est necessaire ou utile pour tel type de swap 
+
+					EXPLICATIONS
+---------------------------------------------------------------------------------------------------------------------------------------
+en automobile le swap est le fait de remplacer le moteur du véhicule par un autre plus puissant de la meme marque ou non. 
+Le swap a souvent comme but une augmentation de puissance plus aisée qu'une modification en profondeur du moteur d'origine du véhicule. 
+Cela permet de faire du véhicule ce qu'on appelle un « sleeper » : un véhicule de forte puissance sous un aspect anodin. 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+pour un swap 99% du temps la personne devra creer ses propres pieces ou prendre des pieces deja existantes de la marque 
+afin de pouvoir installer correctement le nouveau moteur et que tout fonctionne 
+
+
+  exemple cas concret =
+	
+			Un utilisateur a pour projet de modifier sa petite honda civic EJ2 de 90chevaux 
+
+			il souhaite installer un moteur qui provient d'une honda crx delsol EG2 170 chevaux
+                      
+			la bdd permetra de lui dire grace a un match making que pour son projet il lui faut une tringlerie de boite de vitesse de honda civic EK4 
+
+
+
+
+ 
