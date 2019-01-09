@@ -43,6 +43,10 @@ switch ($_POST['routage']) {
     case 'inscriptionToBdd':
         register();
         echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
-    break;
+        break;
+    case 'connectionToBDD':
+    register();
+    echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
+break;
 }
 
