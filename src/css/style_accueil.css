@@ -72,17 +72,40 @@ header{
     height: 704.8px;
 }
 
-/*@media screen and (max-width: 600px) {
+@media screen and (max-width: 1300px) {
 
     #logo{
         width: 250px;
         height: 150px;
         position: relative;
-        left: 1250px;
+        left: 1000px;
         top: 20px;
         background-image: url(../img/logo.png);
         margin: 0%;
         
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    #logo{
+        width: 250px;
+        height: 150px;
+        position: relative;
+        left: 50px;
+        top: 2px;
+        background-image: url(../img/logo.png);
+        margin: 0%;
+        
+    }
+
+    #mentions_legal{
+        position: relative;
+        left: 0px;
+        top: 180px;
+        width: 350px;
+
     }
     
 }
