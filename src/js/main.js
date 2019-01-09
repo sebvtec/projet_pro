@@ -14,8 +14,6 @@ window.onload = function() {
 
     //if(!document.getElementById('linkPass_perdu') === "undefined") {
         
-
-
     //}
     
     document.getElementById('linkAccueil').addEventListener('click', function(e) {
