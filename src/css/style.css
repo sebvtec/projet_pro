@@ -157,4 +157,9 @@ header{
         margin: 0%;
         width: 500px;
     }
+
+    #infosPassPerdu{
+
+        width: 250px;
+    }
 }
