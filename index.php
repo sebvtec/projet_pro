@@ -16,7 +16,11 @@ if(!isset($_POST['routage'])) {
     $_POST['routage'] = 'index';
 }
 
+include 'model/model.php';
+if(isset($_POST['nom'])) {
 
+    register();
+}
 switch ($_POST['routage']) {
     case 'index':
         echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
