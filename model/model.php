@@ -35,6 +35,7 @@ function register(){
 
 function connection(){
 
+	$bdd = co();
 	
 }
 
