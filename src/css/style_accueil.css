@@ -93,7 +93,7 @@ header{
         width: 250px;
         height: 150px;
         position: relative;
-        left: 50px;
+        left: 80px;
         top: 2px;
         background-image: url(../img/logo.png);
         margin: 0%;
@@ -106,6 +106,13 @@ header{
         top: 180px;
         width: 350px;
 
+    }
+
+    body{
+        margin: 0%;
+        background-image: url(../img/img_pass_perdu_media_queries.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
     
 }
