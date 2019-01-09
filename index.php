@@ -49,4 +49,4 @@ switch ($_POST['routage']) {
     echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
 break;
 }
-!!!!!!
+
