@@ -50,7 +50,3 @@ switch ($_POST['routage']) {
 break;
 }
 
-function connection(){
-    
-}
-
