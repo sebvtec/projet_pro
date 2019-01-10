@@ -49,6 +49,7 @@ switch ($_POST['routage']) {
                 $_SESSION['id'] = $id;
                 $_SESSION['pseudo'] = $pseudo;
                 
+                
                 echo $twig->render('newView/mon_garage.html.twig', array('session' => $_SESSION));
             }
         }
