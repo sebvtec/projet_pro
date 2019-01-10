@@ -1,20 +1,20 @@
 window.onload = function() {
-    setRoutage('linkConnection', 'connection');
-    setRoutage('linkMention', 'mention');
-    setRoutage('linkInscription', 'inscription');
-    setRoutage('linkAccueil', 'accueil');
-    setRoutage('btnEnvoyer', 'inscriptionToBdd');
-    setRoutage('btnEnvoyerConnection', 'makeConnection');
-    setRoutage('btnSessionDestroye', 'makeDonnection');
-    setRoutage('linkPass_perdu', 'pass_perdu');
-
+    
+    setRoutage("linkConnection", "connection");
+    setRoutage("linkMention", "mention");
+    setRoutage("linkInscription", "inscription");
+    setRoutage("linkAccueil", "accueil");
+    setRoutage("btnEnvoyer", "inscriptionToBdd");
+    setRoutage("btnEnvoyerConnection", "makeConnection");
+    setRoutage("btnSessionDestroye", "makeDeconnection");
+    setRoutage("linkPass_perdu", "pass_perdu");
+   
     function setRoutage($buttonName, $route) {
-        if(document.getElementById($buttonName) === "undefined") {
+        if(document.getElementById($buttonName) !== null) {
             document.getElementById($buttonName).addEventListener('click', function(e) {
-                document.getElementById('routage').value = "inscriptionToBdd";
+                document.getElementById('routage').value = $route;
                 document.getElementById('mainForm').submit();
             });
         }
     }
-
 }

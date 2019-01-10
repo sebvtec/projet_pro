@@ -6,11 +6,13 @@
 
 {% block content %}
 <div class="row">
-        <div class="col-md-1"><p id"bienvenueClient" class="text-danger">Bienvenue {{ session.pseudo }}</p>
-            <input id="btnSessionDestroye" type="button" value="déconnection"></div>
-        <div class="col-md-4">
-            
-            <canvas id="canvas"></canvas>
-            </div>
-        <div class="col-md-2"></div>
-            {% endblock %}
+    <div class="col-md-1">
+        <p id"bienvenueClient" class="text-danger">Bienvenue {{ session.pseudo }}</p>
+        <input id="btnSessionDestroye" type="button" value="déconnection">
+    </div>
+    <div class="col-md-4">    
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+{% endblock %}
