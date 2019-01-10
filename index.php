@@ -72,7 +72,6 @@ switch ($_POST['routage']) {
 
     case 'makeDeconnection':
         session_destroy();
-        echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
         break;
 }
 

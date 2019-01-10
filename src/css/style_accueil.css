@@ -65,11 +65,12 @@ header{
 }
 
 #canvas{
+    background-image: url(backgroundgarage/accordR.jpg);
     border-style: solid;
     border-width: 1px solid;
     border-color: brown;
-    width: 1504.8px;
-    height: 704.8px;
+    width: 1704.8px;
+    height: 804.8px;
 }
 
 @media screen and (max-width: 1300px) {
