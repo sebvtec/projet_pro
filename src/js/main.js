@@ -26,8 +26,15 @@ window.onload = function() {
         document.getElementById('mainForm').submit();
     });
     
-    document.getElementById('btnEnvoyer').addEventListener('click', function(e) {
-        document.getElementById('routage').value = "inscriptionToBdd";
+    if(document.getElementById('btnEnvoyer') === "undefined") {
+        document.getElementById('btnEnvoyer').addEventListener('click', function(e) {
+            document.getElementById('routage').value = "inscriptionToBdd";
+            document.getElementById('mainForm').submit();
+        });
+    }
+
+    document.getElementById('btnEnvoyerConnection').addEventListener('click', function(e) {
+        document.getElementById('routage').value = "makeConnection";
         document.getElementById('mainForm').submit();
     });
 }

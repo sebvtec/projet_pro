@@ -10,7 +10,8 @@ $loader = new Twig_Loader_Filesystem('view');
 
 $twig = new Twig_Environment($loader);
 
-//var_dump($_POST);
+//$connection = 'newView/connection.html.twig';
+$connection = 'newView/connection.html.twig';
 
 if(!isset($_POST['routage'])) {
     $_POST['routage'] = 'index';
@@ -18,15 +19,34 @@ if(!isset($_POST['routage'])) {
 
 include 'model/model.php';
 if(isset($_POST['nom'])) {
-
     register();
 }
+
 switch ($_POST['routage']) {
     case 'index':
         echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
         break;
     case 'connection':
-        echo $twig->render('newView/connection.html.twig', array('name' => 'Fabien'));
+        echo $twig->render($connection, array('name' => 'Fabien'));
+        break;
+    case 'makeConnection':
+        if(isset($_POST['pseudoCo']) && isset($_POST['mdpCo'])) {
+            $pseudo = htmlspecialchars($_POST['pseudoCo']);
+            $mdp = htmlspecialchars($_POST['mdpCo']);
+            $res = connection($pseudo, $mdp);
+
+            $id = -99999;
+
+            while($row = $res->fetch()) {
+                $id = $row['id'];
+            }
+            if($id <> -99999) {
+                $_SESSION['id'] = $id;
+                $_SESSION['pseudo'] = $pseudo;
+                
+                echo $twig->render('newView/mon_garage.html.twig', array('name' => 'Fabien'));
+            }
+        }
         break;
     case 'mention':
         echo $twig->render('newView/mentions_legals.html.twig', array('name' => 'Fabien'));
@@ -45,8 +65,8 @@ switch ($_POST['routage']) {
         echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
         break;
     case 'connectionToBDD':
-    register();
-    echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
-break;
+        register();
+        echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
+    break;
 }
 

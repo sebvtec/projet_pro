@@ -1,0 +1,23 @@
+{% extends "baseB.html.twig" %}
+
+{% block title %} - connection{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div id="formulaire">
+                Pseudo<br>
+                <input type="text" class="form-control" name="fname">
+                <br><br><br>
+                Mot de passe<br>
+                <input type="password" class="form-control" name="lname">
+                <br><br><br>
+                <a id="linkPass_perdu" href="#" class="lost_password">Mot de passe oublié ?</a>
+                <br><br>
+                <input id="btnEnvoyerConnection" class="btn btn-secondary" type="button" value="Envoyer">
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+{% endblock %}

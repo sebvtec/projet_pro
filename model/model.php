@@ -19,8 +19,6 @@ function register(){
 
 	$bdd = co();
 
-
-    
     $stmt = $bdd->prepare("INSERT INTO utilisateurs (nom, prenom, pseudo, motDePasse, mail) VALUES (:nom, :prenom, :pseudo, :motDePasse, :mail)");
     $stmt->bindParam(':nom', $_POST['nom'], PDO::PARAM_STR);
     $stmt->bindParam(':prenom',$_POST['prenom'], PDO::PARAM_STR);
@@ -30,13 +28,21 @@ function register(){
 	$stmt->execute();
 	
     //header('Location: accueil.html.twig');
-	}
+}
 
 
-function connection(){
-
+function connection($pseudo, $mdp){
 	$bdd = co();
-	
+	$stmt = $bdd->prepare("
+		SELECT *
+		FROM utilisateurs
+		WHERE pseudo = :pseudo
+		AND motDePasse = :mdp
+	");
+    $stmt->bindParam(':pseudo', $pseudo, PDO::PARAM_STR);
+    $stmt->bindParam(':mdp', $mdp, PDO::PARAM_STR);
+	$stmt->execute();
+	return $stmt;
 }
 
 
