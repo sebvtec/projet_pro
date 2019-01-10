@@ -1,45 +1,20 @@
 window.onload = function() {
-    document.getElementById('linkConnection').addEventListener('click', function(e) {
-        document.getElementById('routage').value = "connection";
-        document.getElementById('mainForm').submit();
-    });
-    document.getElementById('linkMention').addEventListener('click', function(e) {
-        document.getElementById('routage').value = "mention";
-        document.getElementById('mainForm').submit();
-    });
-    document.getElementById('linkInscription').addEventListener('click', function(e) {
-        document.getElementById('routage').value = "inscription";
-        document.getElementById('mainForm').submit();
-    });
+    setRoutage('linkConnection', 'connection');
+    setRoutage('linkMention', 'mention');
+    setRoutage('linkInscription', 'inscription');
+    setRoutage('linkAccueil', 'accueil');
+    setRoutage('btnEnvoyer', 'inscriptionToBdd');
+    setRoutage('btnEnvoyerConnection', 'makeConnection');
+    setRoutage('btnSessionDestroye', 'makeDonnection');
+    setRoutage('linkPass_perdu', 'pass_perdu');
 
-    //if(!document.getElementById('linkPass_perdu') === "undefined") {
-        
-    //}
-    
-    document.getElementById('linkAccueil').addEventListener('click', function(e) {
-        document.getElementById('routage').value = "accueil";
-        document.getElementById('mainForm').submit();
-    });
-    //linkpass_perdu en dernier//
-    document.getElementById('linkPass_perdu').addEventListener('click', function(e) {
-        document.getElementById('routage').value = "pass_perdu";
-        document.getElementById('mainForm').submit();
-    });
-    
-    if(document.getElementById('btnEnvoyer') === "undefined") {
-        document.getElementById('btnEnvoyer').addEventListener('click', function(e) {
-            document.getElementById('routage').value = "inscriptionToBdd";
-            document.getElementById('mainForm').submit();
-        });
+    function setRoutage($buttonName, $route) {
+        if(document.getElementById($buttonName) === "undefined") {
+            document.getElementById($buttonName).addEventListener('click', function(e) {
+                document.getElementById('routage').value = "inscriptionToBdd";
+                document.getElementById('mainForm').submit();
+            });
+        }
     }
 
-    document.getElementById('btnEnvoyerConnection').addEventListener('click', function(e) {
-        document.getElementById('routage').value = "makeConnection";
-        document.getElementById('mainForm').submit();
-    });
-
-    document.getElementById('btnSessionDestroye').addEventListener('click', function(e) {
-        document.getElementById('routage').value = "makeDonnection";
-        document.getElementById('mainForm').submit();
-    });
 }
