@@ -97,6 +97,11 @@ header{
     width: 1200px;
 }
 
+#bienvenueClient{
+    position: absolute;
+    bottom: 83px;
+    left: 210px;
+}
 @media screen and (max-width: 1300px) {
 
     #logo{

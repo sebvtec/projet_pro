@@ -65,12 +65,21 @@ header{
 }
 
 #canvas{
-    background-image: url(backgroundgarage/accordR.jpg);
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -300px;
     border-style: solid;
     border-width: 1px solid;
-    border-color: brown;
-    width: 1704.8px;
-    height: 804.8px;
+    border-color: whitesmoke;
+    width: 1700px;
+    height: 830px;
+}
+
+#bienvenueClient{
+    position: absolute;
+    bottom: 83px;
+    left: 210px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -84,6 +93,18 @@ header{
         background-image: url(../img/logo.png);
         margin: 0%;
         
+    }
+
+    #canvas{
+        background-image: url(../img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: -300px;
+        border-style: solid;
+        border-width: 1px solid;
+        border-color: whitesmoke;
+        width: 1050px;
+        height: 380px;
     }
     
 }
