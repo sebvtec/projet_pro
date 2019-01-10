@@ -23,7 +23,7 @@ if(!isset($_POST['routage'])) {
 if(isset($_POST['nom'])) {
     register();
 }
-
+//super//
 // var_dump($_SESSION); NONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 
 switch ($_POST['routage']) {
@@ -48,7 +48,7 @@ switch ($_POST['routage']) {
                 $_SESSION = null;
                 $_SESSION['id'] = $id;
                 $_SESSION['pseudo'] = $pseudo;
-                
+
                 
                 echo $twig->render('newView/mon_garage.html.twig', array('session' => $_SESSION));
             }
