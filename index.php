@@ -13,6 +13,7 @@ $twig = new Twig_Environment($loader);
 //$connection = 'newView/connection.html.twig';
 $connection = 'newView/connection.html.twig';
 
+
 if(!isset($_POST['routage'])) {
     $_POST['routage'] = 'index';
 }
