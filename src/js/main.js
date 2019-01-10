@@ -37,4 +37,9 @@ window.onload = function() {
         document.getElementById('routage').value = "makeConnection";
         document.getElementById('mainForm').submit();
     });
+
+    document.getElementById('btnSessionDestroye').addEventListener('click', function(e) {
+        document.getElementById('routage').value = "makeDeconnection";
+        document.getElementById('mainForm').submit();
+    });
 }

@@ -45,5 +45,8 @@ function connection($pseudo, $mdp){
 	return $stmt;
 }
 
-
+function deconnection(){
+	
+	session_destroy();
+}
 

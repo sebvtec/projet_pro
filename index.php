@@ -68,6 +68,10 @@ switch ($_POST['routage']) {
     case 'connectionToBDD':
         register();
         echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
-    break;
+        break;
+
+    case 'makeDeconnection':
+        echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
+        break;
 }
 
