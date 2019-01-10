@@ -5,6 +5,13 @@ body{
     background-repeat: no-repeat;
 }
 
+#logoGarage{
+    background-image: url(../img/logoGarage.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
+
 header{ 
     background-image: url(../img/header.png);
     height: 100px;
