@@ -73,7 +73,6 @@ switch ($_POST['routage']) {
         register();
         echo $twig->render('newView/accueil.html.twig');
         break;
-
     case 'makeDeconnection':
         session_destroy();
         echo $twig->render('newView/accueil.html.twig');

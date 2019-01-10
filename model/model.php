@@ -26,8 +26,6 @@ function register(){
     $stmt->bindParam(':motDePasse', $_POST['passe'], PDO::PARAM_STR);
     $stmt->bindParam(':mail', $_POST['mail'], PDO::PARAM_STR);
 	$stmt->execute();
-	
-    //header('Location: accueil.html.twig');
 }
 
 

@@ -8,7 +8,7 @@ window.onload = function() {
     setRoutage("btnEnvoyerConnection", "makeConnection");
     setRoutage("btnSessionDestroye", "makeDeconnection");
     setRoutage("linkPass_perdu", "pass_perdu");
-   
+
     function setRoutage($buttonName, $route) {
         if(document.getElementById($buttonName) !== null) {
             document.getElementById($buttonName).addEventListener('click', function(e) {
