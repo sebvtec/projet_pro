@@ -1,4 +1,5 @@
 <?php
+include 'model/model.php';
 
 require_once 'vendor/autoload.php';
 
@@ -8,8 +9,11 @@ $loader = new Twig_Loader_Array(array(
 
 $loader = new Twig_Loader_Filesystem('view');
 
-$twig = new Twig_Environment($loader);
 
+
+
+$twig = new Twig_Environment($loader);
+$twig->addGlobal('session', $_SESSION);
 //$connection = 'newView/connection.html.twig';
 $connection = 'newView/connection.html.twig';
 
@@ -18,7 +22,7 @@ if(!isset($_POST['routage'])) {
     $_POST['routage'] = 'index';
 }
 
-include 'model/model.php';
+
 if(isset($_POST['nom'])) {
     register();
 }
@@ -72,6 +76,7 @@ switch ($_POST['routage']) {
 
     case 'makeDeconnection':
         session_destroy();
+        echo $twig->render('newView/accueil.html.twig', array('name' => 'Fabien'));
         break;
 }
 

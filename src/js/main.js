@@ -39,7 +39,7 @@ window.onload = function() {
     });
 
     document.getElementById('btnSessionDestroye').addEventListener('click', function(e) {
-        document.getElementById('routage').value = "makeDeconnection";
+        document.getElementById('routage').value = "makeDonnection";
         document.getElementById('mainForm').submit();
     });
 }
