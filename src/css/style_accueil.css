@@ -85,9 +85,12 @@ header{
     position: relative;
     left: 490px;
     top: 189px;
+    
 
 }
-
+#logoGarage:hover{
+    width: 55px;
+}
 #logoIndex{
     width: 75px;
     position: relative;
