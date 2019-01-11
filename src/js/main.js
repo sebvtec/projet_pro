@@ -11,9 +11,10 @@ window.onload = function() {
     setRoutage("logoGarage", "monGarage");
     setRoutage("logoForum", "menuForum");
     setRoutage("logoArticleTech", "menuArticleTechnique");
-    setRoutage("logoImpression", "");
-    setRoutage("logoSwap", "");
-    setRoutage("logoIndex", "");
+
+    setRoutage("logoImpression", "Impression3D");
+    setRoutage("logoSwap", "Swap");
+    setRoutage("logoIndex", "IndexDesMembres");
 
     function setRoutage($buttonName, $route) {
         if(document.getElementById($buttonName) !== null) {
