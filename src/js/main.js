@@ -11,7 +11,6 @@ window.onload = function() {
     setRoutage("logoGarage", "monGarage");
     setRoutage("logoForum", "menuForum");
     setRoutage("logoArticleTech", "menuArticleTechnique");
-
     setRoutage("logoImpression", "Impression3D");
     setRoutage("logoSwap", "Swap");
     setRoutage("logoIndex", "IndexDesMembres");

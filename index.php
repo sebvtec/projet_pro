@@ -87,18 +87,15 @@ switch ($_POST['routage']) {
     case 'menuArticleTechnique':
         echo $twig->render('newView/articleTechnique.html.twig');
         break;
-
-
-
-        case 'Impression3D':
+    case 'Impression3D':
         echo $twig->render('newView/Impression.html.twig');
         break;
 
-        case 'Swap':
+    case 'Swap':
         echo $twig->render('newView/Swap.html.twig');
         break;
 
-        case 'IndexDesMembres':
+    case 'IndexDesMembres':
         echo $twig->render('newView/IndexDesMembres.html.twig');
         break;
 
