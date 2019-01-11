@@ -8,6 +8,12 @@ window.onload = function() {
     setRoutage("btnEnvoyerConnection", "makeConnection");
     setRoutage("btnSessionDestroye", "makeDeconnection");
     setRoutage("linkPass_perdu", "pass_perdu");
+    setRoutage("logoGarage", "monGarage");
+    setRoutage("logoForum", "menuForum");
+    setRoutage("logoArticleTech", "menuArticleTechnique");
+    setRoutage("logoImpression", "");
+    setRoutage("logoSwap", "");
+    setRoutage("logoIndex", "");
 
     function setRoutage($buttonName, $route) {
         if(document.getElementById($buttonName) !== null) {

@@ -78,5 +78,15 @@ switch ($_POST['routage']) {
         session_destroy();
         echo $twig->render('newView/accueil.html.twig');
         break;
+    case 'monGarage':
+        echo $twig->render('newView/mon_garage.html.twig');
+        break;
+    case 'menuForum':
+        echo $twig->render('newView/menuForum.html.twig');
+        break;
+    case 'menuArticleTechnique':
+        echo $twig->render('newView/articleTechnique.html.twig');
+        break;
+
 }
 
