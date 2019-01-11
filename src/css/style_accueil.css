@@ -78,6 +78,48 @@ header{
 
 
 
+
+#logoGarage{
+    width: 75px;
+
+}
+
+#logoIndex{
+    width: 75px;
+}
+
+#logoArticleTech{
+    width: 75px;
+}
+
+#logoForum{
+    width: 75px;
+}
+
+#logoImpression{
+    width: 75px;
+}
+
+#logoSwap{
+    width: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1300px) {
 
     #logo{
