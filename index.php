@@ -75,11 +75,11 @@ switch ($_POST['routage']) {
         echo $twig->render('newView/accueil.html.twig');
         break;
     case 'makeDeconnection':
-        session_destroy();
+        $_SESSION = null;
         echo $twig->render('newView/accueil.html.twig');
         break;
     case 'monGarage':
-        echo $twig->render('newView/mon_garage.html.twig');
+        echo $twig->render('newView/mon_garage.html.twig', array('session' => $_SESSION));
         break;
     case 'menuForum':
         echo $twig->render('newView/menuForum.html.twig');
