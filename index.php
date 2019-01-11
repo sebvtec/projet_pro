@@ -75,28 +75,28 @@ switch ($_POST['routage']) {
         echo $twig->render('newView/accueil.html.twig');
         break;
     case 'makeDeconnection':
-        $_SESSION = null;
+        session_destroy();
         echo $twig->render('newView/accueil.html.twig');
         break;
     case 'monGarage':
         echo $twig->render('newView/mon_garage.html.twig', array('session' => $_SESSION));
         break;
     case 'menuForum':
-        echo $twig->render('newView/menuForum.html.twig');
+        echo $twig->render('newView/menuForum.html.twig', array('session' => $_SESSION));
         break;
     case 'menuArticleTechnique':
-        echo $twig->render('newView/articleTechnique.html.twig');
+        echo $twig->render('newView/articleTechnique.html.twig', array('session' => $_SESSION));
         break;
     case 'Impression3D':
-        echo $twig->render('newView/Impression.html.twig');
+        echo $twig->render('newView/Impression.html.twig', array('session' => $_SESSION));
         break;
 
     case 'Swap':
-        echo $twig->render('newView/Swap.html.twig');
+        echo $twig->render('newView/Swap.html.twig', array('session' => $_SESSION));
         break;
 
     case 'IndexDesMembres':
-        echo $twig->render('newView/IndexDesMembres.html.twig');
+        echo $twig->render('newView/IndexDesMembres.html.twig', array('session' => $_SESSION));
         break;
 
 }
