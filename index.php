@@ -90,11 +90,9 @@ switch ($_POST['routage']) {
     case 'Impression3D':
         echo $twig->render('newView/Impression.html.twig', array('session' => $_SESSION));
         break;
-
     case 'Swap':
         echo $twig->render('newView/Swap.html.twig', array('session' => $_SESSION));
         break;
-
     case 'IndexDesMembres':
         echo $twig->render('newView/IndexDesMembres.html.twig', array('session' => $_SESSION));
         break;
